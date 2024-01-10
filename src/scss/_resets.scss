@@ -1,0 +1,62 @@
+/* Reset CSS with Font Sizes Removed from Headings */
+
+/* Box-sizing border-box for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove margin and padding from most elements */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul and ol elements */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default styles from all elements */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Set a baseline for line height */
+body, input, button, select, textarea {
+  line-height: 1.5;
+}
+
+/* Remove default button styles */
+button {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+/* Remove default outline styles */
+a, button {
+  outline: none;
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional: Set additional styles for links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove font sizes from headings */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit; /* Set font size to inherit */
+}
+
+/* Additional resets or styles can be added based on project needs */

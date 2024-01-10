@@ -1,0 +1,74 @@
+// Button.scss
+@import '../../../scss/variables';
+
+.btn{
+    display: inline-block;
+  padding: 6px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  border-radius: 20px;
+}
+
+.btn-primary {
+  background-color: $primary-clr;
+  color: $text-clr;
+
+  &:hover {
+    background-color: darken($primary-clr, 10%);
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary-clr;
+  color: $text-clr;
+
+  &:hover {
+    background-color: darken($secondary-clr, 20%);
+  }
+}
+.btn-dark {
+  background-color: $dark-clr;
+  color: #fff;
+
+  &:hover {
+    background-color: darken($secondary-clr, 10%);
+  }
+}
+
+.btn-outlined {
+  background-color: transparent;
+  color: $neutral-clr;
+  border: 2px solid $neutral-clr;
+
+  &:hover {
+    background-color: $primary-clr;
+    color: $text-clr;
+    border: 2px solid rgba(0,0,0,0);
+  }
+}
+.btn-outlined-primary {
+  background-color: transparent;
+  color: $primary-clr;
+  border: 2px solid $primary-clr;
+
+  &:hover {
+    background-color: $primary-clr;
+    color: $text-clr;
+    border: 2px solid rgba(0,0,0,0);
+  }
+}
+.btn-outlined-dark {
+  background-color: transparent;
+  color: $text-clr;
+  border: 2px solid $dark-clr;
+
+  &:hover {
+    background-color: $primary-clr;
+    color: $text-clr;
+    border: 2px solid rgba(0,0,0,0);
+  }
+}

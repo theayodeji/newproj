@@ -1,1 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Poppins:wght@200;300;400;700&display=swap');
+$primary-clr: #d9ff00;
+$secondary-clr: #cbff6b;
+$tertiary-clr: #d5ff86;
+$neutral-clr: #fcfcfc;
+$dark-clr: #0f0f0f;
+$background-clr: #ecf0f1;
+$text-clr: #0f0f0f;
+$secondary-text-clr: #777;
+
+// Spacing
+$spacing-unit: 8px;
+$container-max-width: 1200px;   // Maximum width of the main container
+
+// Breakpoints
+$mobile-breakpoint: 768px;
+$tablet-breakpoint: 992px;
+$desktop-breakpoint: 1200px;
+
+// Borders and Shadows
+$border-radius: 4px;
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+// Z-Index
+$z-index-dropdown: 1000;
+$z-index-modal: 2000;
+$z-index-overlay: 1500;
+
+// Spacing
+$spacing-unit: 8px;
+
+// Base Padding
+$base-padding: $spacing-unit * 1.5;
+$base-padding-small: $spacing-unit;
+
+// Base Margin
+$base-margin: $spacing-unit * 2;
+$base-margin-small: $spacing-unit;
