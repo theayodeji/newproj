@@ -1,0 +1,74 @@
+@import "../../../scss/variables";
+
+.dropdown{
+    position: relative;
+    margin: 0 auto;
+    width: max-content;
+    cursor: pointer;
+
+    .label{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .arrow{
+            transition: transform .4s ease;
+            font-size: 30px;
+        }
+    }
+}
+
+.dropdown-options {
+  position: absolute;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: $border-radius * 2;
+  overflow: hidden;
+  width: 200px;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease .1s;
+}
+
+.dropdown-option {
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($neutral-clr, 1%);
+    .material-symbols-rounded {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .label {
+    flex-grow: 1;
+  }
+
+  .material-symbols-rounded {
+    font-size: 24px;
+    color: $primary-clr;
+    filter: drop-shadow($box-shadow);
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: transform .3s ease, opacity 0.3s ease;
+  }
+}
+
+.dropdown.open{
+    .dropdown-options{
+        opacity: 1;
+        visibility: visible;
+    }
+    .label span.arrow{
+        transform: rotate(180deg);
+        color: $primary-clr;
+    }
+}

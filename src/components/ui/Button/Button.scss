@@ -30,12 +30,13 @@
     background-color: darken($secondary-clr, 20%);
   }
 }
-.btn-dark {
+.btn-dark { 
   background-color: $dark-clr;
   color: #fff;
 
   &:hover {
-    background-color: darken($secondary-clr, 10%);
+    background-color: $primary-clr;
+    color: $text-clr;
   }
 }
 

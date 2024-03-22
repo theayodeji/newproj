@@ -1,0 +1,15 @@
+@import '../../../scss/variables';
+
+.badge:not([type='verified']){
+    background-color: $primary-clr;
+    padding: $base-padding-small $base-padding;
+    border-radius: $border-radius * 5;
+}
+
+.badge[type='verified']{
+    background-image: url('./Badge.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: $base-padding * 2;
+}

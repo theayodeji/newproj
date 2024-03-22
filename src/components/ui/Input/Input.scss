@@ -1,0 +1,40 @@
+// Input.scss
+.input-container {
+    margin-bottom: 16px;
+  
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+  
+    .input-wrapper {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+  
+      .input-icon {
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        background-color: #eee;
+        border-right: 1px solid #ddd;
+  
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+  
+      input {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+  

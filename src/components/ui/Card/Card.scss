@@ -1,0 +1,43 @@
+// Card.scss
+@import '../../../scss/variables';
+
+input > *{
+    color: red !important; 
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: $box-shadow;
+  transition: box-shadow 0.3s ease;
+
+  &.square{
+    width: max-content;
+    aspect-ratio: 1 / 1;
+    padding: 20px;
+  }
+
+  &.small {
+    width: 200px;
+    padding: 16px;
+  }
+
+  &.medium {
+    width: 300px;
+    padding: 24px;
+  }
+
+  &.large {
+    width: 400px;
+    padding: 32px;
+  }
+
+  &.default{
+    width: 100%;
+    padding: 5%;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}

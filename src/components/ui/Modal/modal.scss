@@ -1,0 +1,27 @@
+@import "../../../scss/variables";
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5 ms ease-out;
+   
+
+    .modal-wrapper{
+        position: relative;
+    }
+
+    .close-modal-btn{
+        position: absolute;
+        right: 5px;
+        top: 21px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+}
