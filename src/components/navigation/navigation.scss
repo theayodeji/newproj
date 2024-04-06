@@ -1,0 +1,36 @@
+@import '../../scss/variables';
+
+
+header{
+    padding: 1rem 0;
+
+    .logo{
+        font-weight: 600;
+    }
+    
+    nav{
+        width: 85%;
+        max-width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-inline: auto;
+        position: relative;
+
+        ul{
+            display: flex;
+            gap: 1rem;
+            position: relative;
+        }
+    }
+    .underline{
+        height: 1.5px;
+        border-radius: 3px;
+        background-color: $primary-clr;
+        position: absolute;
+        bottom: 0; 
+        z-index: -1;
+        transition: width 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+     
+}
